@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайны Вселенной - Исследуйте космос</title>
+    <meta name="description" content="Увлекательное путешествие по просторам Вселенной">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f1a;
+            color: #e0e0e0;
+        }
+        header {
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #4cc9f0;
+        }
+        h1 {
+            color: #4cc9f0;
+            margin: 0;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #f72585;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+            background-color: #1a1a2e;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #f72585;
+            border-bottom: 2px solid #4cc9f0;
+            padding-bottom: 0.5rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .gallery figure {
+            flex: 1 1 300px;
+            max-width: 100%;
+            margin: 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        figcaption {
+            text-align: center;
+            margin-top: 0.5rem;
+            color: #a5a5a5;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #16213e;
+            color: #a5a5a5;
+            border-top: 1px solid #4cc9f0;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: #4cc9f0;
+        }
+        a:hover {
+            color: #f72585;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Тайны Вселенной</h1>
+        <nav>
+            <a href="#galaxies">Галактики</a>
+            <a href="#stars">Звёзды</a>
+            <a href="#planets">Планеты</a>
+            <a href="#exploration">Исследования</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="galaxies">
+            <h2>Удивительные галактики</h2>
+            <p>Наша Вселенная содержит миллиарды галактик, каждая из которых уникальна.</p>
+            
+            <div class="gallery">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Спиральная галактика Млечный Путь с ярким ядром и спиральными рукавами">
+                    <figcaption>Млечный Путь - наша галактика</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Галактика Андромеды - крупнейшая галактика Местной группы">
+                    <figcaption>Галактика Андромеды</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                         alt="Космический телескоп Хаббл снимает далёкие галактики">
+                    <figcaption>Скопление галактик</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section id="stars">
+            <h2>Жизнь звёзд</h2>
+            <p>Звёзды рождаются, живут и умирают, проходя через удивительные этапы:</p>
+            <ul>
+                <li>Молекулярные облака - звёздные ясли</li>
+                <li>Протозвезды - молодые формирующиеся звёзды</li>
+                <li>Главная последовательность (как наше Солнце)</li>
+                <li>Красные гиганты и сверхновые</li>
+                <li>Белые карлики, нейтронные звёзды или чёрные дыры</li>
+            </ul>
+        </section>
+        
+        <section id="planets">
+            <h2>Экзопланеты</h2>
+            <p>Мы обнаружили тысячи планет за пределами Солнечной системы. Вот самые интересные типы:</p>
+            <ol>
+                <li>Горячие юпитеры - газовые гиганты близко к звезде</li>
+                <li>Суперземли - каменистые планеты крупнее Земли</li>
+                <li>Планеты в зоне обитаемости - где возможна жидкая вода</li>
+            </ol>
+            <p>Узнайте больше на <a href="https://exoplanets.nasa.gov" target="_blank" rel="noopener noreferrer">официальном сайте NASA об экзопланетах</a>.</p>
+        </section>
+        
+        <section id="exploration">
+            <h2>Космические исследования</h2>
+            <p>Важные миссии по изучению Вселенной:</p>
+            <ul>
+                <li>Телескоп Хаббл (1990-н.в.)</li>
+                <li>Космический телескоп Джеймса Уэбба (2021-н.в.)</li>
+                <li>Миссия Вояджер (1977-н.в.)</li>
+                <li>Марсоход Perseverance (2021-н.в.)</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Тайны Вселенной - HTML5 проект</p>
+        <p>Изображения предоставлены Unsplash и NASA</p>
+    </footer>
+</body>
+</html>
